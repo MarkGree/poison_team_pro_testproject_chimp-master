@@ -4857,7 +4857,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pointer
+      name: blink
       rect:
         serializedVersion: 2
         x: 604
@@ -4865,7 +4865,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4878,7 +4878,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: empty_tile
+      name: juggernaut_mask
       rect:
         serializedVersion: 2
         x: 622
@@ -4886,7 +4886,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4910,7 +4910,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Overworld_0: 21300248
-      Pointer: 201475388
+      blink: 201475388
       bone: 21300262
       bridge_vertical_bottom: 21300148
       bridge_vertical_bottomleft: 21300146
@@ -4958,7 +4958,6 @@ TextureImporter:
       chain_center: 21300228
       chain_top: 21300226
       dirt_with_flower: 21300232
-      empty_tile: -1678274087
       fence: -287794536
       flowerpot_thick: 21300258
       flowerpot_thin: 21300256
@@ -4984,6 +4983,7 @@ TextureImporter:
       grass_vs_water_top: 21300042
       grass_vs_water_topleft: 21300040
       grass_vs_water_topright: 21300044
+      juggernaut_mask: -1678274087
       path: 21300030
       path_vs_grass_bottomleft: 21300036
       path_vs_grass_bottomright: 21300038

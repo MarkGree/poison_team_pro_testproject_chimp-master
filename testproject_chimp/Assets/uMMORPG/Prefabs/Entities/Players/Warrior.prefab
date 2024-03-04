@@ -994,7 +994,6 @@ MonoBehaviour:
   portraitIcon: {fileID: 21300000, guid: 6478ee7ee492b4e6fbde7bfc84dc223e, type: 3}
   account: 
   className: 
-  skillExperience: 0
   interactionRange: 2
   localPlayerClickThrough: 1
   cancelActionKey: 27
@@ -1436,6 +1435,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a94a4098d97d84de4a061b7edfbd2f1a, type: 2}
   - {fileID: 11400000, guid: 8787f5fcf36d147f4a81923ba2e80eb9, type: 2}
   - {fileID: 11400000, guid: 048820e847e6f481ebe913901407b12c, type: 2}
+  - {fileID: 11400000, guid: a93637cf1cb2e914daf94cc0f35b4fc3, type: 2}
   _effectMount: {fileID: 3196300715052012985}
   onSkillCastStarted:
     m_PersistentCalls:
@@ -2479,7 +2479,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8541952566170594595
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2496,7 +2496,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &412348859377931873
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -650,6 +650,7 @@ SpriteAtlas:
   - {fileID: 21300116, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300038, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300390, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
+  - {fileID: -1678274087, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300082, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300188, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300260, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
@@ -679,13 +680,13 @@ SpriteAtlas:
   - {fileID: 21300132, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300376, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300060, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
-  - {fileID: -1678274087, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300204, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300286, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300272, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300318, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300384, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300264, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
+  - {fileID: 201475388, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300160, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300270, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300158, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
@@ -720,7 +721,6 @@ SpriteAtlas:
   - {fileID: 21300032, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300080, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300302, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
-  - {fileID: 201475388, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300148, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300096, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   - {fileID: 21300058, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
@@ -1668,6 +1668,7 @@ SpriteAtlas:
   - stonewall_bottomright
   - path_vs_grass_bottomright
   - woodhouse_chimneyroof_center_bottom
+  - juggernaut_mask
   - path_vs_water_topleft
   - stonewall_vs_water_left
   - skull_rotated
@@ -1697,13 +1698,13 @@ SpriteAtlas:
   - stonewall_vs_grass_right
   - woodhouse_back_righthalf_right
   - water_vs_grass_bottomleft
-  - empty_tile
   - castleplatform_center
   - castle_darkentry_right
   - castlewall_bottomright
   - woodhouse_front_center_center
   - woodhouse_chrimneyroof_righthalf_bottomright
   - castlewall_bottomleft
+  - blink
   - flowers_a
   - castlewall_bottom_shadow
   - flowers_b
@@ -1738,7 +1739,6 @@ SpriteAtlas:
   - path_vs_grass_topleft
   - water_waves_h
   - tree_bottomright
-  - Pointer
   - bridge_vertical_bottom
   - path_vs_water_bottomright
   - water_vs_grass_topright
