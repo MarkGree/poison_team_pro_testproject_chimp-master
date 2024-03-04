@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8990db154ac7a6b4b8d1d55e4229c2cb, type: 3}
-  m_Name: Blink
+  m_Script: {fileID: 11500000, guid: 28f7112d7a70a2444af1cbc3877dc438, type: 3}
+  m_Name: Juggernaut
   m_EditorClassIdentifier: 
   followupDefaultAttack: 0
   toolTip: '<b>{NAME} Lvl {LEVEL}</b>
 
 
-    Instantly moves you forward'
-  image: {fileID: 201475388, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
+    Spin me right round'
+  image: {fileID: -1678274087, guid: 8fe1a28a11d43499c9bfb7c7c1182f81, type: 3}
   learnDefault: 1
   showCastBar: 0
   cancelCastIfTargetDied: 0
@@ -33,15 +33,25 @@ MonoBehaviour:
     bonusPerLevel: 0
   maxLevel: 1
   manaCosts:
-    baseValue: 5
+    baseValue: 10
     bonusPerLevel: 0
   castTime:
     baseValue: 0
     bonusPerLevel: 0
   cooldown:
-    baseValue: 2
+    baseValue: 4
     bonusPerLevel: 0
   castRange:
-    baseValue: 6
-    bonusPerLevel: 1
-  castSound: {fileID: 0}
+    baseValue: 5
+    bonusPerLevel: 0
+  castSound: {fileID: 8300000, guid: 4a9e0c58191039b4f9876cf751c97369, type: 3}
+  duration:
+    baseValue: 4
+    bonusPerLevel: 0
+  actionInterval:
+    baseValue: 0.2
+    bonusPerLevel: 0
+  damage:
+    baseValue: 15
+    bonusPerLevel: 0
+  dbg_TotalBasicDamage: 300
