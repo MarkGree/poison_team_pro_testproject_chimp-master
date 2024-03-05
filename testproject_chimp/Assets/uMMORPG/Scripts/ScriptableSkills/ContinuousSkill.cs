@@ -1,11 +1,11 @@
 using System.Collections;
+using System.Data.OleDb;
 using UnityEngine;
 
 public abstract class ContinuousSkill : ScriptableSkill
 {
-    public LinearFloat duration;
-    public LinearFloat actionInterval;
-
+    public LinearInt duration;
+    
     public override void Apply(Entity caster, int skillLevel, Vector2 direction)
     {
         caster.StartCoroutine(CSkillWork(caster, skillLevel, direction));
@@ -13,29 +13,17 @@ public abstract class ContinuousSkill : ScriptableSkill
 
     private IEnumerator CSkillWork(Entity caster, int skillLevel, Vector2 direction)
     {
-        float time = 0f;
-        float duration = this.duration.Get(skillLevel);
-        float interval = Mathf.Clamp(this.actionInterval.Get(skillLevel), 0f, float.MaxValue);
-        
-        if (interval == 0f)
+        int time;
+        int duration = this.duration.Get(skillLevel);
+
+        for (int i = 0; i < duration; ++i)
         {
-            while (time < duration)
-            {
-                yield return null;
-                time += Time.deltaTime;
-                Perform();
-            }
+            WaitForSeconds wait = new WaitForSeconds(1f);
+            yield return wait;
+            time = i + 1;
+            Perform();
         }
-        else
-        {
-            while (time < duration)
-            {
-                WaitForSeconds wait = new WaitForSeconds(interval);
-                yield return wait;
-                time += interval;
-                Perform();
-            }
-        }
+
 
         void Perform()
         {
@@ -43,7 +31,7 @@ public abstract class ContinuousSkill : ScriptableSkill
         }
     }
 
-    protected abstract void PerformContinuousAction(Entity caster, int skillLelel, Vector2 direction, float duration, float time);
+    protected abstract void PerformContinuousAction(Entity caster, int skillLelel, Vector2 direction, int duration, int time);
 
     public override bool CheckDistance(Entity caster, int skillLevel, out Vector2 destination)
     {

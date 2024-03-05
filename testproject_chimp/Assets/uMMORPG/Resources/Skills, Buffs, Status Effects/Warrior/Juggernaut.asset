@@ -48,10 +48,6 @@ MonoBehaviour:
   duration:
     baseValue: 4
     bonusPerLevel: 0
-  actionInterval:
-    baseValue: 0.2
+  damageTotal:
+    baseValue: 200
     bonusPerLevel: 0
-  damage:
-    baseValue: 15
-    bonusPerLevel: 0
-  dbg_TotalBasicDamage: 300
