@@ -6,19 +6,27 @@ public class BlinkSkill : ScriptableSkill
 {
     public override void Apply(Entity caster, int skillLevel, Vector2 lookDirection)
     {
-        Vector2 targetPosition;
+        Vector2 blinkDirection;
+        Vector2 destination;
 
         float range = base.castRange.Get(skillLevel);
-        Vector2 moveDirection = caster.movement.GetVelocity().normalized;
+        Vector2 moveVelocity = caster.movement.GetVelocity();
+        float moveSpeed = moveVelocity.magnitude;
 
-        if (NavMesh2D.Raycast(caster.transform.position, (Vector2)caster.transform.position + moveDirection * range, out NavMeshHit2D hit, NavMesh2D.AllAreas))
-        {
-            targetPosition = hit.position;
-        }
+        if (moveSpeed == 0f)
+            blinkDirection = lookDirection;
         else
-            targetPosition = (Vector2)caster.transform.position + moveDirection * range;
+            blinkDirection = moveVelocity.normalized;
+        
+        destination = (Vector2)caster.transform.position + blinkDirection * range;
 
-        caster.movement.Warp(targetPosition);
+
+        if (NavMesh2D.Raycast(caster.transform.position, destination, out NavMeshHit2D hit, NavMesh2D.AllAreas))
+        {
+            destination = hit.position;
+        }
+
+        caster.movement.Warp(destination);
     }
 
     public override bool CheckDistance(Entity caster, int skillLevel, out Vector2 destination)
